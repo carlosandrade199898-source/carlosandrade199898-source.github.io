@@ -1,0 +1,25 @@
+:root{color-scheme:dark;--bg:#0b1520;--panel:#112330;--line:#294451;--ink:#f4f8f5;--muted:#b9cbd2;--lime:#d9fa65}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+a{color:var(--lime);text-underline-offset:.24em}
+a:focus-visible{outline:2px solid var(--lime);outline-offset:5px}
+.wrap{width:min(100% - 2rem,68rem);margin-inline:auto}
+header,footer{border-block-end:1px solid var(--line)}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:.9rem 1.5rem;flex-wrap:wrap;padding-block:1rem}
+.brand{display:flex;align-items:center;gap:.55rem;color:var(--ink);font-weight:800;letter-spacing:.17em;text-decoration:none}
+.brand b{display:block;width:2rem;aspect-ratio:58/27;background:var(--lime);clip-path:polygon(0% 93%,31% 26%,48% 56%,64% 7%,100% 93%,64% 37%,48% 70%,31% 48%)}
+nav{display:flex;flex-wrap:wrap;gap:.45rem 1.15rem;font-size:.9rem}
+nav a{color:var(--muted)}
+nav a[aria-current=page]{color:var(--lime)}
+.hero{display:grid;align-content:end;min-height:clamp(25rem,64vw,37rem);margin-block:1.25rem 2rem;padding:clamp(1.35rem,5vw,4.25rem);border:1px solid var(--line);border-radius:1.3rem;background:linear-gradient(180deg,#09132005 15%,#08131dd1 74%,#08131d 100%),url("assets/montana.jpg") center 45%/cover}
+h1,h2{line-height:1.12;margin:0 0 .65em}
+h1{font-size:clamp(2.35rem,7vw,4.5rem);letter-spacing:-.045em}
+h2{font-size:1.38rem}
+.hero h1{max-width:14ch}
+p{margin:.45em 0 1em}
+.hero p,.cards p{color:var(--muted);max-width:54ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1rem;margin-bottom:2.25rem}
+.cards section{padding:1.25rem;border:1px solid var(--line);border-radius:1rem;background:var(--panel)}
+article{max-width:48rem;margin:2.4rem auto 3.5rem;overflow-wrap:anywhere}
+article h2{margin-top:1.6em}
+footer{border-block:1px solid var(--line) 0;color:var(--muted);font-size:.88rem}
